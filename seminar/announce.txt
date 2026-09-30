@@ -1,0 +1,32 @@
+---
+layout: null
+---
+{%- assign now = site.time | date: "%s" | plus: 0 -%}
+{%- for s in site.data.seminar -%}
+{%- assign t = s.date | date: "%s" | plus: 0 -%}
+{%- if t >= now -%}
+{%- unless next -%}{%- assign next = s -%}{%- endunless -%}
+{%- endif -%}
+{%- endfor -%}
+{%- if next -%}
+Subject: [SELMA] {{ next.speaker }}: {{ next.title }} ({{ next.date | date: "%B %-d" }})
+
+Dear all,
+
+The next SELMA seminar will take place on {{ next.date | date: "%A, %B %-d, %Y" }} at {{ next.date | date: "%H:%M" }}{% if next.room %} in room {{ next.room }}{% endif %}.
+
+Speaker: {{ next.speaker }}{% if next.lab %} ({{ next.lab }}){% endif %}
+{% if next.website %}Website: {{ next.website }}
+{% endif %}
+Title: {{ next.title }}
+
+Abstract:
+{{ next.abstract }}
+
+Everybody is welcome!
+
+Best regards,
+The SELMA organizers
+{% else -%}
+No upcoming seminar.
+{% endif -%}

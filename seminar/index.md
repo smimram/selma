@@ -5,6 +5,8 @@ title: Seminar
 
 # Seminar
 
+<p class="announce"><a href="announce.txt">Mail announce for the next seminar</a></p>
+
 {% for s in site.data.seminar %}
 <div class="seminar">
   {% if s.picture %}<img class="seminar-picture" src="{{ s.picture }}" alt="{{ s.speaker }}">{% endif %}

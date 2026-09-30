@@ -186,3 +186,9 @@ main p, main li {
   text-align: justify;
   hyphens: auto;
 }
+
+.announce {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.95rem;
+  margin: -0.5rem 0 2rem;
+}
