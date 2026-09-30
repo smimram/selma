@@ -4,17 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
   <header>
-    <nav>
-      <a href="{{ '/' | relative_url }}">SELMA</a>
-      <a href="{{ '/seminar.html' | relative_url }}">Seminar</a>
+    <nav class="container">
+      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>SELMA</a>
+      <a href="{{ '/seminar.html' | relative_url }}"{% if page.url == '/seminar.html' %} class="active"{% endif %}>Seminar</a>
     </nav>
   </header>
-  <main>
+  <main class="container">
     {{ content }}
   </main>
+  <footer>
+    <div class="container">SELMA · Saclaysian exchange on logic, models, and applications</div>
+  </footer>
 </body>
 </html>
