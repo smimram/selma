@@ -27,3 +27,7 @@ The SELMA organizers
 {% else -%}
 No upcoming seminar.
 {% endif -%}
+
+---
+Webpage: https://smimram.github.io/selma/seminar/
+Calendar: https://smimram.github.io/selma/seminar/calendar.ics

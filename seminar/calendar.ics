@@ -1,0 +1,23 @@
+---
+layout: none
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SELMA seminar//EN
+X-WR-CALNAME:SELMA Seminar
+X-WR-TIMEZONE:Europe/Paris
+METHOD:PUBLISH
+{% for talk in site.data.seminar limit:10 %}BEGIN:VEVENT
+UID:selma-{{ talk.date | date: "%Y%m%dT%H%M" }}@lix.polytechnique.fr
+ORGANIZER;CN="Samuel Mimram":MAILTO:samuel.mimram@lix.polytechnique.fr
+LOCATION:{{ talk.room }}
+SUMMARY:SELMA: {{ talk.speaker }} / {{ talk.title }}
+DESCRIPTION:{{ talk.abstract | strip_newlines }}
+URL:{{ '/seminar/' | absolute_url }}
+CLASS:PUBLIC
+DTSTART;TZID=Europe/Paris:{{ talk.date | date: "%Y%m%dT%H%M%S" }}
+DTEND;TZID=Europe/Paris:{{ talk.date | date: "%s" | plus: 3600 | date: "%Y%m%dT%H%M%S" }}
+DTSTAMP;TZID=Europe/Paris:{{ site.time | date: "%Y%m%dT%H%M%S" }}
+SEQUENCE:{{ site.time | date: "%s" }}
+END:VEVENT
+{% endfor %}END:VCALENDAR

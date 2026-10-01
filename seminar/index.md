@@ -5,7 +5,11 @@ title: Seminar
 
 # Seminar
 
-<p class="announce"><a href="announce.txt">Mail announce for the next seminar</a></p>
+<p class="announce">
+<a href="calendar.ics">Calendar (iCal)</a>
+·
+<a href="announce.txt">Announce</a> 
+</p>
 
 {% for s in site.data.seminar %}
 <div class="seminar">

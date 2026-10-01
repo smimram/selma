@@ -188,6 +188,7 @@ main p, main li {
 }
 
 .announce {
+  text-align: center;
   font-family: Inter, system-ui, sans-serif;
   font-size: 0.95rem;
   margin: -0.5rem 0 2rem;
