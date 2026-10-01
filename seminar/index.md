@@ -6,7 +6,7 @@ title: Seminar
 # Seminar
 
 <p class="announce">
-<a href="calendar.ics">Calendar (iCal)</a>
+<a href="calendar.ics">Calendar</a>
 ·
 <a href="announce.txt">Announce</a> 
 </p>
