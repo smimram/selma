@@ -9,14 +9,13 @@ layout: null
 {%- endif -%}
 {%- endfor -%}
 {%- if next -%}
-Subject: SELMA // {{ next.speaker }} // {{ next.title }} ({{ next.date | date: "%B %-d" }})
+Subject: [SELMA] {{ next.speaker }}: {{ next.title }} ({{ next.date | date: "%B %-d" }})
 
 Dear all,
 
 The next SELMA seminar will take place on {{ next.date | date: "%A, %B %-d, %Y" }} at {{ next.date | date: "%H:%M" }}{% if next.room %} in room {{ next.room }}{% endif %}.
 
-{{ next.speaker }}{% if next.lab %} ({{ next.lab }}){% endif %}
-{{ next.title }}
+{{ next.speaker }}{% if next.lab %} ({{ next.lab }}){% endif %}: {{ next.title }}
 
 {{ next.abstract }}
 
