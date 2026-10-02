@@ -13,9 +13,11 @@ layout: null
 
 Dear all,
 
-The next SELMA seminar will take place on {{ next.date | date: "%A, %B %-d, %Y" }} at {{ next.date | date: "%H:%M" }}{% if next.room %} in room {{ next.room }}{% endif %}.
+The next SELMA seminar by {{ next.speaker }}{% if next.lab %} ({{ next.lab }}){% endif %} will take place on
 
-{{ next.speaker }}{% if next.lab %} ({{ next.lab }}){% endif %}: {{ next.title }}
+{{ next.date | date: "%A, %B %-d, %Y" }} at {{ next.date | date: "%H:%M" }}{% if next.room %} in room {{ next.room }}{% endif %}
+
+{{ next.speaker }}: {{ next.title }}
 
 {{ next.abstract }}
 
