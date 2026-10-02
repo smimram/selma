@@ -4,5 +4,8 @@
   picture: https://www.illc.uva.nl/uploaded_files/person/photo.jpeg
   website: https://staff.fnwi.uva.nl/b.vandenberg3/
   lab: University of Amsterdam
-  title: TBA
-  abstract: TBA
+  title: Algebraic weak factorisation systems
+  abstract: |
+    Weak factorisation systems (WFSs) play an important role in abstract homotopy theory; in particular, Quillen model structures consist of two WFSs that interact in a good way. A WFS on a category consists of two classes maps, let's call them left and right maps, such that any map factors as a left map followed by a right map and the two classes determine each other through lifting properties. Algebraic weak factorisation systems (AWFSs, due to Grandis, Tholen and Garner) are a more explicit version of these WFSs in that both the factorisation and the lifts are part of the structure of a WFS; in particular, the property of being a left (or right) map is replaced by a notion of having the structure of a left (or right) map. Every AWFS determines a WFS, but at the same time there are also situations that can be seen as instances of an AWFS, but not as a WFS. Much of the recent interest in AWFSs comes from homotopy type theory, as many of the recent attempts to give a constructive semantics for homotopy type theory have made heavy use of the theory of AWFs.
+
+    In this talk I will gave an overview of the theory of AWFs, stressing the relation with double categories. I will also discuss joint work with Lingyuan Ye, John Bourke and Ellie Lohman on monoidal AWFSs and distributive laws for AWFSs.
