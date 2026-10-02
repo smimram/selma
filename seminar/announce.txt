@@ -9,7 +9,7 @@ layout: null
 {%- endif -%}
 {%- endfor -%}
 {%- if next -%}
-Subject: [SELMA] {{ next.speaker }}: {{ next.title }} ({{ next.date | date: "%B %-d" }})
+[SELMA] {{ next.speaker }}: {{ next.title }} ({{ next.date | date: "%B %-d" }})
 
 Dear all,
 
