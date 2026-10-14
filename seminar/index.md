@@ -6,6 +6,8 @@ title: Seminar
 # Seminar
 
 <p class="announce">
+<a href="https://sympa.lix.polytechnique.fr/lists/info/selma">Mailing-list</a>
+·
 <a href="calendar.ics">Calendar</a>
 ·
 <a href="announce.txt">Announce</a> 
